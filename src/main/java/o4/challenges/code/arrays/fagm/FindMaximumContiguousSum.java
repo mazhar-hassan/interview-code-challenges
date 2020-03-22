@@ -4,7 +4,7 @@ import o4.challenges.code.utils.ArrayUtils;
 
 class FindMaximumContiguousSum {
 
-    public int solution(int array[]) {
+    public int solution(int[] array) {
         int max = array[0];
         int current = max;
         for (int i = 1; i < array.length; i++) {

@@ -6,7 +6,7 @@ import o4.challenges.code.utils.ArrayUtils;
  * Values can only be 1 to N (No zero, N is length or array)
  */
 public class FindFirstDuplicateInArray {
-    public int solution(int array[]) {
+    public int solution(int[] array) {
         for (int i = 0; i < array.length; i++) {
             int index = Math.abs(array[i])-1;
             if (array[index] < 0) {
