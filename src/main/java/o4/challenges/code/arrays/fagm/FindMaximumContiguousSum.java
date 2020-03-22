@@ -1,5 +1,7 @@
 package o4.challenges.code.arrays.fagm;
 
+import o4.challenges.code.utils.ArrayUtils;
+
 class FindMaximumContiguousSum {
 
     public int solution(int array[]) {
@@ -23,26 +25,9 @@ class FindMaximumContiguousSum {
 
     public void checkSolution(int[] array) {
         int result = solution(array);
-        print(array);
+        ArrayUtils.print(array);
         System.out.println(result);
         System.out.println();
-    }
-
-    public static void print(int[] array) {
-        if (array == null) {
-            System.out.println("{{Null array}}");
-        } else if (array.length == 0) {
-            System.out.println("{{Empty array}}");
-        } else {
-            System.out.print("[");
-            for (int i=0; i < array.length; i++) {
-                System.out.print(array[i]);
-                if (i != array.length-1) {
-                    System.out.print(", ");
-                }
-            }
-            System.out.println("]");
-        }
     }
 
 }
